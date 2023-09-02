@@ -4,27 +4,177 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mukesh Bajgain</title>
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">  
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
-    <nav class="nav1">
-        <div class="navigation">
-            <img src="assets/images/favicon.png" class="logo_image" alt="logo">
+    <nav class="nav1 navigation">
+        <div class="navigation fade-in">
+            <img src="./assets/images/favicon.png" class="logo_image" alt="logo">
         </div>
-        <div class="nav-list">
+        <div class="nav-list fade-in">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
+    <section class="home fade-in" id="home">
     <div class="intro">
+        <div class="text">
         <h1>I'm Mukesh</h1>
-        <p class="job_title">Web Developer | Graphics Designer | Content creator</p>
+        <p class="job-title">Web Developer | Content Creator | Graphics Designer</p>
     </div>
+    </div>
+
+    <div class="floating_buttons">
+        <button class="floating-button"><a href="#about">About Me</a></button>
+        <button class="floating-button1" id="downloadBtn">Download CV</button>
+        
+    </div>
+</section>
+    <!-- about me -->
+   
+    <section class="about-me" id="about">
+        
+        <div class="" id="profile">
+            <img src="./assets/images/aiart.png" alt="Profile Picture">
+            <h2 class="about_name">Mukesh Bajgain</h2>
+            <p class="about-info">Web Developer | Content Creator | Graphics Designer</p>
+        </div>
+        <div class="description">
+            <h3>Hi there!</h3>
+            <p>
+                I'm <span class="yellow-name">Mukesh Bajgain</span>, a passionate web developer, content creator, and graphics designer. With a keen eye for design and a love for coding, I create stunning and functional websites while producing engaging content. My journey began with a fascination for technology and creativity, and I've been on an exciting adventure ever since.
+            </p>
+            <p>
+                Whether it's crafting responsive websites, designing eye-catching graphics, or sharing my knowledge through tutorials, I'm dedicated to bringing ideas to life in the digital realm.
+            </p>
+            <p>Let's connect and collaborate!</p>
+        </div>
+    </section>
+    <div class="floating-div">Message Me!</div>
+    <!-- portfolio -->
+    <section class="portfolio" id="portfolio">
+        <h1 class="portfolio-title">My Services</h1>
+        <hr class="line">
+        <div class="box-container">
+
+            <div class="box">
+                <img src="./assets/images/icon-1.png" alt="">
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+    
+            <div class="box">
+                <img src="./assets/images/graphic design.png" alt="">
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+    
+            <div class="box">
+                <img src="./assets/images/video editing.jpg" alt="">
+                <h3>Video Editing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+    
+            <div class="box">
+                <img src="./assets/images/pngwing.com.png" alt="">
+                <h3>Logo Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+    
+            <div class="box">
+                <img src="./assets/images/video editing.jpg" alt="">
+                <h3>Content Creation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+    
+            <div class="box">
+                <img src="./assets/images/icon-6.png" alt="">
+                <h3>React.js</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+    
+        </div>
+    
+    </section>
+    <!-- contact me -->
+    <section class="contact" id="contact">
+     <form onsubmit="sendEmail(); reset(); return false">
+        <div class="contact-box" >
+			<div class="left"></div>
+			<div class="right">
+				<h2 class="contactme">Contact Me</h2>
+				<input type="text" id="name" class="field" placeholder="Your Name">
+				<input type="text" id="email" class="field" placeholder="Your Email">
+				<input type="text" id="phone" class="field" placeholder="Phone">
+				<textarea id="message" placeholder="Message" class="field"></textarea>
+				<button class="btn" type="submit">Send</button>
+			</div>
+		</div>
+    </form>
+    </section>
+    <!-- Copyright -->
+    <div class="footer">
+        <span class=>Copyright &#169 Mukesh Bajgain 2023</span>
+        <div class="social">
+            <ul>
+                <li><a href=""><img src="./assets/images/facebook.png" alt=""></a></li>
+                <li><a href=""><img src="./assets/images/instagram.png" alt=""></a></li>
+                <li><a href=""><img src="./assets/images/linkedin.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- cursor -->
+    <div class="cursor"></div>
+<!-- email script -->
+<script>
+
+function sendEmail(){
+//     Email.send({
+//     SecureToken : "d287a8f1-0d88-4737-ad7c-cf96c1f04fd0",
+//     To : 'bajgainmukesh73@gmail.com',
+//     From : document.getElementById("email").value,
+//     Subject : "Contact Form Enquiry",
+//     Body : "Name:" + document.getElementById("name").value
+//     + "<br> Email:" + document.getElementById("email").value
+//     + "<br> Phone:" + document.getElementById("phone").value
+//     + "<br> Message:" + document.getElementById("message").value
+// }).then(
+//   message => alert("Message Sent Succesfully")
+// );
+Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "bajgainmukesh73@gmail.com",
+    Password : "782D8B1CDBC4BA17C276352AACA16AC132F8",
+    To : 'bajgainmukesh73@gmail.com',
+    From : 'bajgainmukesh73@gmail.com',
+    Subject : "Contact Form Enquiry",
+    Body : "Name:" + document.getElementById("name").value
+    + "<br> Email:" + document.getElementById("email").value
+    + "<br> Phone:" + document.getElementById("phone").value
+    + "<br> Message:" + document.getElementById("message").value
+}).then(
+  message => alert(message)
+);
+}
+</script>
+   
+<script src="./js/cursor.js"></script> 
+<script src="./main.js"></script> 
+
 </body>
 </html>
